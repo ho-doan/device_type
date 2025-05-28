@@ -5,7 +5,7 @@ import XCTest
 // If your plugin has been explicitly set to "type: .dynamic" in the Package.swift,
 // you will need to add your plugin as a dependency of RunnerTests within Xcode.
 
-@testable import device_type
+@testable import device_is_pad
 
 // This demonstrates a simple unit test of the Swift portion of this plugin's implementation.
 //
@@ -13,8 +13,8 @@ import XCTest
 
 class RunnerTests: XCTestCase {
 
-  func testDeviceType() {
-    let plugin = DeviceTypePlugin()
+  func testGetPlatformVersion() {
+    let plugin = DeviceIsPadPlugin()
 
     let call = FlutterMethodCall(methodName: "deviceType", arguments: [])
 

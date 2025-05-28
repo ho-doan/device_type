@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "device_type",
+    name: "device_is_pad",
     platforms: [
         .iOS("12.0")
     ],
     products: [
-        .library(name: "device-type", targets: ["device_type"])
+        .library(name: "device-is-pad", targets: ["device_is_pad"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "device_type",
+            name: "device_is_pad",
             dependencies: [],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required

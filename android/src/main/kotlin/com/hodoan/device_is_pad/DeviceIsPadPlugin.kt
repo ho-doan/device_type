@@ -1,15 +1,13 @@
-package com.hodoan.device_type
+package com.hodoan.device_is_pad
 
-import android.content.Context
-import android.content.res.Configuration
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 
-/** DeviceTypePlugin */
-class DeviceTypePlugin: FlutterPlugin, MethodCallHandler {
+/** DeviceIsPadPlugin */
+class DeviceIsPadPlugin: FlutterPlugin, MethodCallHandler {
   /// The MethodChannel that will the communication between Flutter and native Android
   ///
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
@@ -18,7 +16,7 @@ class DeviceTypePlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var context: Context
 
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "device_type")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "device_is_pad")
     context = flutterPluginBinding.applicationContext
     channel.setMethodCallHandler(this)
   }

@@ -1,7 +1,7 @@
-name: device_type
+name: device_is_pad
 description: "A new Flutter plugin project detect device is pad or phone."
 version: 0.0.1
-homepage: https://github.com/ho-doan/device_type
+homepage:
 
 environment:
   sdk: ^3.7.2
@@ -35,10 +35,10 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.hodoan.device_type
-        pluginClass: DeviceTypePlugin
+        package: com.hodoan.device_is_pad
+        pluginClass: DeviceIsPadPlugin
       ios:
-        pluginClass: DeviceTypePlugin
+        pluginClass: DeviceIsPadPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

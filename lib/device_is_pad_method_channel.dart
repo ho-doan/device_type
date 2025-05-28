@@ -1,13 +1,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'device_type_platform_interface.dart';
+import 'device_is_pad_platform_interface.dart';
 
-/// An implementation of [DeviceTypePlatform] that uses method channels.
-class MethodChannelDeviceType extends DeviceTypePlatform {
+/// An implementation of [DeviceIsPadPlatform] that uses method channels.
+class MethodChannelDeviceIsPad extends DeviceIsPadPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('device_type');
+  final methodChannel = const MethodChannel('device_is_pad');
 
   @override
   Future<String?> deviceType() async {

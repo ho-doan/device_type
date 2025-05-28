@@ -21,7 +21,7 @@ Future<void> main() async {
     () async {
       WidgetsFlutterBinding.ensureInitialized();
 
-      final s = await DeviceType.instance.deviceType();
+      final s = await DeviceIsPad.instance.deviceType();
       
       ...
 

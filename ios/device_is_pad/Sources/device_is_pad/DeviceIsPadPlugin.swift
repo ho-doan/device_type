@@ -1,10 +1,10 @@
 import Flutter
 import UIKit
 
-public class DeviceTypePlugin: NSObject, FlutterPlugin {
+public class DeviceIsPadPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "device_type", binaryMessenger: registrar.messenger())
-    let instance = DeviceTypePlugin()
+    let channel = FlutterMethodChannel(name: "device_is_pad", binaryMessenger: registrar.messenger())
+    let instance = DeviceIsPadPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 

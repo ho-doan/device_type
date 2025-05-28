@@ -1,6 +1,6 @@
-# device_type_example
+# device_is_pad_example
 
-Demonstrates how to use the device_type plugin.
+Demonstrates how to use the device_is_pad plugin.
 
 ## Getting Started
 

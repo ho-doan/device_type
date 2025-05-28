@@ -1,12 +1,12 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:device_type/device_type_method_channel.dart';
+import 'package:device_is_pad/device_is_pad_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  MethodChannelDeviceType platform = MethodChannelDeviceType();
-  const MethodChannel channel = MethodChannel('device_type');
+  MethodChannelDeviceIsPad platform = MethodChannelDeviceIsPad();
+  const MethodChannel channel = MethodChannel('device_is_pad');
 
   setUp(() {
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger

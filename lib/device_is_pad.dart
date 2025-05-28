@@ -1,4 +1,4 @@
-import 'device_type_platform_interface.dart';
+import 'device_is_pad_platform_interface.dart';
 
 enum DeviceModel {
   pad,
@@ -8,11 +8,11 @@ enum DeviceModel {
   bool get isPhone => this == phone;
 }
 
-class DeviceType {
-  const DeviceType._();
-  static final instance = DeviceType._();
+class DeviceIsPad {
+  const DeviceIsPad._();
+  static final instance = DeviceIsPad._();
   Future<DeviceModel> deviceType() async {
-    final type = await DeviceTypePlatform.instance.deviceType();
+    final type = await DeviceIsPadPlatform.instance.deviceType();
     if (type == null) return DeviceModel.phone;
     if (type.contains('phone')) {
       return DeviceModel.phone;
