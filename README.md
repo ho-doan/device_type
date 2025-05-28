@@ -1,6 +1,6 @@
 # device_type
 
-A new Flutter plugin project detect device is pad or phone.
+plugin detect device is pad or phone.
 
 ## Getting Started
 

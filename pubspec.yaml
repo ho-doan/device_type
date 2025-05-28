@@ -1,5 +1,5 @@
 name: device_is_pad
-description: "A new Flutter plugin project detect device is pad or phone."
+description: "plugin detect device is pad or phone."
 version: 0.0.1
 homepage: https://github.com/ho-doan/device_type
 
