@@ -1,5 +1,7 @@
 package com.hodoan.device_is_pad
 
+import android.content.Context
+import android.content.res.Configuration
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
@@ -26,7 +28,7 @@ class DeviceIsPadPlugin: FlutterPlugin, MethodCallHandler {
       val screenLayout = context.resources.configuration.screenLayout
       val screenSize = screenLayout and Configuration.SCREENLAYOUT_SIZE_MASK
       val isTablet = screenSize >= Configuration.SCREENLAYOUT_SIZE_LARGE
-      result.success("Android ${if( isTablet) "pad" else "phone"}")
+      result.success("Android ${if(isTablet) "pad" else "phone"}")
     } else {
       result.notImplemented()
     }

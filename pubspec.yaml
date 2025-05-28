@@ -1,10 +1,10 @@
 name: device_is_pad
 description: "plugin detect device is pad or phone."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/ho-doan/device_type
 
 environment:
-  sdk: ^3.7.2
+  sdk: ^3.5.0
   flutter: '>=3.3.0'
 
 dependencies:
